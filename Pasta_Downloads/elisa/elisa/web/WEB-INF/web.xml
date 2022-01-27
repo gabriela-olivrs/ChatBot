@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<display-name>elis</display-name>
+ 
+ <servlet>
+ <servlet-name>InserirS</servlet-name>
+  <servlet-class>controller.Significado_Controller</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>InserirS</servlet-name>
+ <url-pattern>/sig</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>InserirF</servlet-name>
+ <servlet-class>controller.Frase_Controller</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>InserirF</servlet-name>
+ <url-pattern>/fra</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+ <servlet-name>InserirR</servlet-name>
+ <servlet-class>controller.Resposta_Controller</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>InserirR</servlet-name>
+ <url-pattern>/resp</url-pattern>
+ </servlet-mapping>
+
+</web-app>
+
+
+ 
+
+ 
+  
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Chat Bot UI/UX & html for web" />
+    <meta name="keywords"
+        content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin" />
+    <meta name="author" content="css3transition" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description"
+        content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin | Css3Transition " />
+    <meta name="keywords"
+        content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin" />
+    <meta name="abstract"
+        content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin">
+    <meta name="author" content="Rahul Yaduvanshi">
+    <meta name="technologies" content="HTML5, CSS3, HTML, CSS, JQUERY, Bootstrap, Angular">
+    <meta name="distribution" content="Global">
+    <meta name="development" content="Rahul Yaduvanshi">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="city" content="New Delhi">
+    <meta name="country" content="india">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link href="css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/chatBot.css" rel="stylesheet" type="text/css" />
+    <link href="css/timeline.css" rel="stylesheet" type="text/css" />
+    <title>Elisa</title>
+</head>
+
+<body>
+    <header>
+        <h1>Site criado para treinar a Bot Elisa
+        </h1>
+    </header>
+    <ul id="nav">
+        <li><a href="#">Aprendizagem</a>
+            <ul>
+                <li><a href="significado.jsp">Significado</a></li>
+                <li><a href="frase.jsp">Frase</a></li>
+                <li><a href="resposta.jsp">Resposta</a></li>
+            </ul>
+        </li>
+    </ul>
+ 
+    <main>
+        <div>
+            <img src="img/elisa.gif" alt="">
+        </div>
+    </main>
+    <!-- Chat bot UI start -->
+    <div class="chat-screen">
+        <div class="chat-header">
+            <div class="chat-header-title">
+                Vamos Conversar?
+            </div>
+        </div>
+        <div class="chat-mail">
+            <div class="row">
+                <div class="col-md-12 text-center mb-2">
+                    <p>Sou Elisa, estou pronta para aprender com você!!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-primary btn-rounded btn-block">Start Chat</button>
+                </div>
+                <div class="col-md-12">
+                    <div class="powered-by">by Gabriela Oliveira</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chat-body hide">
+            <div class="chat-bubble you">oi</div>
+            <!-- bolinha -->
+            <div class="chat-bubble you">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    style="margin: auto;display: block;shape-rendering: auto;width: 43px;height: 20px;"
+                    viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                    <circle cx="0" cy="44.1678" r="15" fill="#ffffff">
+                        <animate attributeName="cy" calcMode="spline"
+                            keySplines="0 0.5 0.5 1;0.5 0 1 0.5;0.5 0.5 0.5 0.5" repeatCount="indefinite"
+                            values="57.5;42.5;57.5;57.5" keyTimes="0;0.3;0.6;1" dur="1s" begin="-0.6s"></animate>
+                    </circle>
+                    <circle cx="45" cy="43.0965" r="15" fill="#ffffff">
+                        <animate attributeName="cy" calcMode="spline"
+                            keySplines="0 0.5 0.5 1;0.5 0 1 0.5;0.5 0.5 0.5 0.5" repeatCount="indefinite"
+                            values="57.5;42.5;57.5;57.5" keyTimes="0;0.3;0.6;1" dur="1s" begin="-0.39999999999999997s">
+                        </animate>
+                    </circle>
+                    <circle cx="90" cy="52.0442" r="15" fill="#ffffff">
+                        <animate attributeName="cy" calcMode="spline"
+                            keySplines="0 0.5 0.5 1;0.5 0 1 0.5;0.5 0.5 0.5 0.5" repeatCount="indefinite"
+                            values="57.5;42.5;57.5;57.5" keyTimes="0;0.3;0.6;1" dur="1s" begin="-0.19999999999999998s">
+                        </animate>
+                    </circle>
+                </svg>
+            </div>
+        </div>
+        <div class="chat-input hide">
+            <form action="inserirFrase.php" method="post">
+                <input type="text" nome="txtFrase" id="txtFrase" required placeholder="Digite uma mensagem para Elisa">
+                <input type="submit" value="Enviar">
+        </div>
+    </div>
+    <div class="chat-bot-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-message-square animate">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-x ">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </div>
+    <!-- Chat Bot UI Ends -->
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".select2_el").select2({
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            //Toggle fullscreen
+            $(".chat-bot-icon").click(function (e) {
+                $(this).children('img').toggleClass('hide');
+                $(this).children('svg').toggleClass('animate');
+                $('.chat-screen').toggleClass('show-chat');
+            });
+            $('.chat-mail button').click(function () {
+                $('.chat-mail').addClass('hide');
+                $('.chat-body').removeClass('hide');
+                $('.chat-input').removeClass('hide');
+                $('.chat-header-option').removeClass('hide');
+            });
+            $('.end-chat').click(function () {
+                $('.chat-body').addClass('hide');
+                $('.chat-input').addClass('hide');
+                $('.chat-session-end').removeClass('hide');
+                $('.chat-header-option').addClass('hide');
+            });
+        });
+    </script>
+</body>
+
+</html>
